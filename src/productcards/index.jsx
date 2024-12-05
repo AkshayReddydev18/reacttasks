@@ -1,5 +1,5 @@
 import React from "react";
-import "./home.css";
+import "./index.css";
 
 const products = [
   {
@@ -213,62 +213,22 @@ const products = [
 
 
 function Main() {
-  return (
-    <>
-    <h1>Products Table Day2</h1>
-      <table>
-        <tr>
-          <th>Id</th>
-          <th>Title</th>
-          <th>Price</th>
-          <th>Description</th>
-          <th>Category</th>
-          <th>Ratings</th>
-          <th>Image</th>
-        </tr>
+  return (<>
+  <h1>Products Cards</h1>
+    <div class="main">
+      {products.map((a, b) => {
+        return (
+          <div class="card" key={b} >
+            <img  src={a.image} alt={a.title} />
+            <h4>Name:{a.name}</h4>
+            <p>Description:{a.description}</p>
 
-        {products.map((a, b) => {
-          return (
-            <tr>
-              <td>{a.id}</td>
-              <td>{a.title}</td>
-              <td>{a.price}</td>
-              <td>{a.description}</td>
-              <td>{a.category}</td>
-              <td>{a.rating.rate}</td>
-              <td>
-                <img style={{ height: "100px" }} src={a.image} alt={a.title} />
-              </td>
-            </tr>
-          );
-        })}
-      </table>
-      <hr />
-    </>
+          </div>
+        );
+      })}
+    </div>
+    <hr /></>
   );
 }
 
-
-
-
-
-// function Main() {
-//   return (<>
-//     <div class="main">
-//       {products.map((a, b) => {
-//         return (
-//           <div class="card" key={b} >
-//             <img  src={a.image} alt={a.title} />
-//             <h4>Name:{a.name}</h4>
-//             <p>Description:{a.description}</p>
-
-//           </div>
-//         );
-//       })}
-//     </div>
-//     <hr /></>
-//   );
-// }
-
 export default Main;
-

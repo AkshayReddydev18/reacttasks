@@ -5,6 +5,8 @@ import Cards from './table/home'
 import Main from './cards/main'
 import Todo from "./todo/index"
 import Formsubmission from "./formsubmission"
+import Productcards from "./productcards/"
+import FuncLifeCycle from './uicomponent/lifecycle/index'
 
 function App() {
   return (
@@ -23,10 +25,14 @@ function App() {
           Learn React
         </a>
       </header> */}
+      <FuncLifeCycle/>
       <Cards/>
+      <Productcards/>
       <Main/>
       <Todo/>
       <Formsubmission/>
+      
+      
 
 
     </div>
