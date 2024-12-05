@@ -11,7 +11,7 @@ div.card{
     flex-wrap: wrap;
     border: 2px double black;
     overflow: scroll;
-    scrollbar-width: none;
+    /* scrollbar-width: none; */
 }
 div.main{
     margin: 0px auto ;

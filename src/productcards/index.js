@@ -4,6 +4,7 @@ class card extends component {
   render() {
     return(
         <div>
+          
 
         </div>
     )

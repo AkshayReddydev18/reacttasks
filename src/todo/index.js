@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./todo.css";
 
 class Todo extends Component {
   constructor() {
@@ -33,28 +34,32 @@ class Todo extends Component {
 
   render() {
     return (
-      <div>
-        <form onSubmit={this.handleSubmit}>
-          <input
-            type="text"
-            name="todo"
-            id="todo"
-            value={this.state.todo}
-            onChange={this.handleChange}
-          />
-          <input type="submit" />
-        </form>
+      <>
+        <div class="todo">
+          <h1>Todo List </h1>
 
-        <ul>
-          {this.state.list.map((c, d) => (
-            <li key={d}>
-              {c}
-              {/* <button>edit</button> */}
-              <button onClick={() => this.handleDelete(d)}>Delete</button>
-            </li>
-          ))}
-        </ul>
-      </div>
+          <form onSubmit={this.handleSubmit}>
+            <input
+              type="text"
+              name="todo"
+              id="todo"
+              value={this.state.todo}
+              onChange={this.handleChange}
+            />
+            <input type="submit" />
+          </form>
+
+          <ul>
+            {this.state.list.map((c, d) => (
+              <li key={d}>
+                {c}
+                <button onClick={() => this.handleDelete(d)}>Delete</button>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <hr />
+      </>
     );
   }
 }

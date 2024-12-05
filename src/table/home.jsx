@@ -1,4 +1,4 @@
-import { Component } from "react";
+import React from "react";
 import "./home.css";
 
 const products = [
@@ -209,76 +209,76 @@ const products = [
     rating: { rate: 3.6, count: 145 },
   },
 ];
-function main() {
+// function Main() {
+//   return (
+//     <div
+//     >
+//       {products.map((a, b) => {
+//         return (
+//           <div
+//             style={{
+//               display: "flex",
+//               flexwrap: "wrap",
+//               width: "300px",
+//               border: "2px solid black",
+//               backgroundColor: "aqua",
+//             }}
+//           >
+//             {" "}
+//             <img
+//               style={{ height: "100px ", width: "100px" }}
+//               src={a.image}
+//               alt="a.id"
+//             />
+//             <h2>{a.title}</h2>
+//             <h2>{a.price}</h2>
+//             <h2>{a.rating.rate}</h2>
+//           </div>
+//         );
+//       })}
+//     </div>
+//   );
+// }
+
+function Main() {
   return (
-    <div
-      // style={{
-      //   display: "flex",
-      //   gap: "10px",
-      //   flexwrap: "wrap",
-      //   flexDirection: "row",
-      // }}
-    >
-      {products.map((a, b) => {
-        return (
-          <div
-            style={{
-              display: "flex",
-              flexwrap: "wrap",
-              width: "300px",
-              border: "2px solid black",
-              backgroundColor: "aqua",
-            }}
-          >
-            {" "}
-            <img
-              style={{ height: "100px ", width: "100px" }}
-              src={a.image}
-              alt="a.id"
-            />
-            <h2>{a.title}</h2>
-            <h2>{a.price}</h2>
-            <h2>{a.rating.rate}</h2>
-          </div>
-        );
-      })}
-    </div>
+    <>
+    <h1>Products Table Day2</h1>
+      <table>
+        <tr>
+          <th>Id</th>
+          <th>Title</th>
+          <th>Price</th>
+          <th>Description</th>
+          <th>Category</th>
+          <th>Ratings</th>
+          <th>Image</th>
+        </tr>
+
+        {products.map((a, b) => {
+          return (
+            <tr>
+              <td>{a.id}</td>
+              <td>{a.title}</td>
+              <td>{a.price}</td>
+              <td>{a.description}</td>
+              <td>{a.category}</td>
+              <td>{a.rating.rate}</td>
+              <td>
+                <img style={{ height: "100px" }} src={a.image} alt={a.title} />
+              </td>
+            </tr>
+          );
+        })}
+      </table>
+      <hr />
+    </>
   );
 }
 
-// function Main() {
-//   return (
-//     <>
-//       <table>
-//         <tr>
-//           <th>Id</th>
-//           <th>Title</th>
-//           <th>Price</th>
-//           <th>Description</th>
-//           <th>Category</th>
-//           <th>Ratings</th>
-//           <th>Image</th>
-//         </tr>
 
-//         {products.map((a, b) => {
-//           return (
-//             <tr>
-//               <td>{a.id}</td>
-//               <td>{a.title}</td>
-//               <td>{a.price}</td>
-//               <td>{a.description}</td>
-//               <td>{a.category}</td>
-//               <td>{a.rating.rate}</td>
-//               <td>
-//                 <img style={{ height: "100px" }} src={a.image} alt={a.title} />
-//               </td>
-//             </tr>
-//           );
-//         })}
-//       </table>
-//     </>
-//   );
-// // }
+
+
 // function Main(){
 //   return(
 //     <>
@@ -290,22 +290,22 @@ function main() {
 //     </>
 //   )
 // }
-function Main() {
-  return (
-    <div class="main">
-      {products.map((a, b) => {
-        return (
-          <div class="card" key={b} >
-            <img  src={a.image} alt={a.title} />
-            <h3>{a.name}</h3>
-            <p>{a.description}</p>
+// function Main() {
+//   return (
+//     <div class="main">
+//       {products.map((a, b) => {
+//         return (
+//           <div class="card" key={b} >
+//             <img  src={a.image} alt={a.title} />
+//             <h3>{a.name}</h3>
+//             <p>{a.description}</p>
 
-          </div>
-        );
-      })}
-    </div>
-  );
-}
+//           </div>
+//         );
+//       })}
+//     </div>
+//   );
+// }
 
 export default Main;
 

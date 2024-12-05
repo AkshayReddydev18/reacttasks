@@ -36,6 +36,7 @@ class Main extends Component {
   render() {
     return (
       <>
+      <h1>ProductsCards Day5</h1>
         <h1 style={styles.available}>
           {products.productName}
           {products.productPrice}
@@ -78,6 +79,7 @@ class Main extends Component {
             <img src={products[3].productImage} alt="" />
           </div>
         </div>
+        <hr />
       </>
     );
   }

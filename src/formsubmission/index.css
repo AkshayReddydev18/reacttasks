@@ -1,0 +1,17 @@
+.card {
+    border: 1px solid #ccc; /* Remove quotes */
+    border-radius: 8px; /* Use proper CSS syntax */
+    padding: 5px;
+    margin-top: 20px; /* Use kebab-case for multi-word properties */
+    background-color: skyblue;
+    height: 300px; /* Missing semicolon */
+    width: 400px; /* Missing semicolon */
+    margin: 50px auto;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+form{
+    margin: 50px auto;
+    width: 400px;
+    /* border: 2px solid black; */
+}
