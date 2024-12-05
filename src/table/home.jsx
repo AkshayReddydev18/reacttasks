@@ -209,6 +209,7 @@ const products = [
     rating: { rate: 3.6, count: 145 },
   },
 ];
+
 // function Main() {
 //   return (
 //     <div
@@ -240,72 +241,63 @@ const products = [
 //   );
 // }
 
-function Main() {
-  return (
-    <>
-    <h1>Products Table Day2</h1>
-      <table>
-        <tr>
-          <th>Id</th>
-          <th>Title</th>
-          <th>Price</th>
-          <th>Description</th>
-          <th>Category</th>
-          <th>Ratings</th>
-          <th>Image</th>
-        </tr>
-
-        {products.map((a, b) => {
-          return (
-            <tr>
-              <td>{a.id}</td>
-              <td>{a.title}</td>
-              <td>{a.price}</td>
-              <td>{a.description}</td>
-              <td>{a.category}</td>
-              <td>{a.rating.rate}</td>
-              <td>
-                <img style={{ height: "100px" }} src={a.image} alt={a.title} />
-              </td>
-            </tr>
-          );
-        })}
-      </table>
-      <hr />
-    </>
-  );
-}
-
-
-
-
-// function Main(){
-//   return(
-//     <>
-//     {products.map((a,b) => {
-//       return(
-//       )
-
-//     })}
-//     </>
-//   )
-// }
 // function Main() {
 //   return (
-//     <div class="main">
-//       {products.map((a, b) => {
-//         return (
-//           <div class="card" key={b} >
-//             <img  src={a.image} alt={a.title} />
-//             <h3>{a.name}</h3>
-//             <p>{a.description}</p>
+//     <>
+//     <h1>Products Table Day2</h1>
+//       <table>
+//         <tr>
+//           <th>Id</th>
+//           <th>Title</th>
+//           <th>Price</th>
+//           <th>Description</th>
+//           <th>Category</th>
+//           <th>Ratings</th>
+//           <th>Image</th>
+//         </tr>
 
-//           </div>
-//         );
-//       })}
-//     </div>
+//         {products.map((a, b) => {
+//           return (
+//             <tr>
+//               <td>{a.id}</td>
+//               <td>{a.title}</td>
+//               <td>{a.price}</td>
+//               <td>{a.description}</td>
+//               <td>{a.category}</td>
+//               <td>{a.rating.rate}</td>
+//               <td>
+//                 <img style={{ height: "100px" }} src={a.image} alt={a.title} />
+//               </td>
+//             </tr>
+//           );
+//         })}
+//       </table>
+//       <hr />
+//     </>
 //   );
 // }
+
+
+
+
+
+function Main() {
+  return (<>
+    <div class="main">
+      {products.map((a, b) => {
+        return (
+          <div class="card" key={b} >
+            <img  src={a.image} alt={a.title} />
+            <h3>Name:{a.name}</h3>
+            <p>Description:{a.description}</p>
+
+          </div>
+        );
+      })}
+    </div>
+    <hr /></>
+  );
+}
 
 export default Main;
 

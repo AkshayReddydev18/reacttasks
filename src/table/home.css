@@ -16,7 +16,7 @@ div.card{
 div.main{
     margin: 0px auto ;
     display: flex;
-    gap:10px;
+    /* gap:10px; */
     flex-wrap: wrap;
 }
 img{

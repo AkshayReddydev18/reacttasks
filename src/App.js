@@ -24,7 +24,6 @@ function App() {
         </a>
       </header> */}
       <Cards/>
-
       <Main/>
       <Todo/>
       <Formsubmission/>

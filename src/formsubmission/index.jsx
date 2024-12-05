@@ -92,6 +92,7 @@ const FormSubmission = () => {
           </div>
         )}
       </div>
+      <hr />
     </>
   );
 };
