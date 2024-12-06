@@ -45,6 +45,7 @@ class Todo extends Component {
               id="todo"
               value={this.state.todo}
               onChange={this.handleChange}
+              required
             />
             <input type="submit" />
           </form>

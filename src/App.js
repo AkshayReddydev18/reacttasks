@@ -25,12 +25,13 @@ function App() {
           Learn React
         </a>
       </header> */}
-      <FuncLifeCycle/>
+      
       <Cards/>
       <Productcards/>
       <Main/>
       <Todo/>
       <Formsubmission/>
+      <FuncLifeCycle/>
       
       
 
