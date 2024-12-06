@@ -7,7 +7,7 @@ import Todo from "./todo/index"
 import Formsubmission from "./formsubmission"
 import Productcards from "./productcards/"
 import FuncLifeCycle from './uicomponent/lifecycle/index'
-
+import Counterfc from './6deccomponents/index'
 function App() {
   return (
     <div className="App">
@@ -32,6 +32,7 @@ function App() {
       <Todo/>
       <Formsubmission/>
       <FuncLifeCycle/>
+      <Counterfc/>
       
       
 
