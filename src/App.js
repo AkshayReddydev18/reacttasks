@@ -28,7 +28,7 @@ function App() {
         </a>
       </header> */}
       <FormComp/>
-      <Calculator/>
+      
       
       <Cards/>
       <Productcards/>
@@ -37,6 +37,7 @@ function App() {
       <Formsubmission/>
       <FuncLifeCycle/>
       <Counterfc/>
+      <Calculator/>
       
       
 

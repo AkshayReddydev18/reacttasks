@@ -28,3 +28,9 @@ div.calculator{
     width: 250px;
     margin: 0px auto;
 }
+.c{
+  background-color: aqua;
+}
+.equal{
+  background-color: aquamarine;
+}

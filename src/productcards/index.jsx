@@ -220,8 +220,10 @@ function Main() {
         return (
           <div class="card" key={b} >
             <img  src={a.image} alt={a.title} />
-            <h4>Name:{a.name}</h4>
-            <p>Description:{a.description}</p>
+            <h4>Name:{a.title}</h4>
+            <p>Price:{a.price}</p><br/>
+            <p>Category:{a.category}</p>
+            {/* <p>Description:{a.description}</p> */}
 
           </div>
         );

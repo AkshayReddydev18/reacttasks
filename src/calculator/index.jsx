@@ -23,11 +23,12 @@ function Calculator() {
     }
   };
 
-  return (
+  return (<>
+  <h2>Calaculator</h2>
     <div className="calculator">
       <div className="display">{displayValue}</div>
       <div className="buttons">
-        <button onClick={() => handleButtonClick("C")}>C</button>
+        <button class="c" onClick={() => handleButtonClick("C")}>C</button>
         <button onClick={() => handleButtonClick("()")}>()</button>
         <button onClick={() => handleButtonClick("%")}>%</button>
         <button onClick={() => handleButtonClick("/")}>/</button>
@@ -49,9 +50,10 @@ function Calculator() {
         <button onClick={() => handleButtonClick("0")}>0</button>
         <button onClick={() => handleButtonClick(".")}>.</button>
         <button onClick={() => handleButtonClick("D")}>D</button>
-        <button onClick={() => handleButtonClick("=")}>=</button>
+        <button class="equal" onClick={() => handleButtonClick("=")}>=</button>
       </div>
     </div>
+    </>
   );
 }
 
