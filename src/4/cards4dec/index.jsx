@@ -35,7 +35,7 @@ const Accordion = () => {
 
   return (
     <div>
-      <h1>Product ID Search</h1>
+      <h1>Product Search</h1>
       <div style={{ marginBottom: '20px' }}>
         <input
           type="number"
@@ -48,24 +48,6 @@ const Accordion = () => {
           Search
         </button>
       </div>
-     
-      {/* <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
-        {/* {products.map((product) => (
-          <div
-            key={product.id}
-            style={{
-              padding: '10px',
-              border: '1px solid #ccc',
-              cursor: 'pointer',
-              background: '#f9f9f9',
-              borderRadius: '5px',
-            }}
-            onClick={() => setSelectedProduct(product)}
-          >
-            
-          </div>
-        ))} }
-      </div> */}
 
       {selectedProduct && (
         <div style={{
