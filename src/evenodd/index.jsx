@@ -29,7 +29,7 @@ class EvenOddChecker extends Component {
   render() {
     const { number, result } = this.state;
 
-    return (
+    return (<>
       <div>
         <h1>Even or Odd Checker</h1>
         <input
@@ -40,7 +40,7 @@ class EvenOddChecker extends Component {
         />
         <button onClick={this.checkEvenOdd}>Check</button>
         <h2>Result: {result}</h2>
-      </div>
+      </div><hr/></>
     );
   }
 }

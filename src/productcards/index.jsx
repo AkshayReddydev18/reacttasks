@@ -221,7 +221,7 @@ function Main() {
           <div class="card" key={b} >
             <img  src={a.image} alt={a.title} />
             <h4>Name:{a.title}</h4>
-            <p>Price:{a.price}</p><br/>
+            <p class="para">Price:{a.price}</p><br/>
             <p>Category:{a.category}</p>
             {/* <p>Description:{a.description}</p> */}
 
@@ -229,7 +229,7 @@ function Main() {
         );
       })}
     </div>
-    <hr /></>
+    </>
   );
 }
 

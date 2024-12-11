@@ -54,6 +54,7 @@ function Calculator() {
       </div>
     </div>
     <hr />
+    
     </>
   );
 }
