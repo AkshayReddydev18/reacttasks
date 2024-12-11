@@ -10,6 +10,7 @@ import FuncLifeCycle from './uicomponent/lifecycle/index'
 import Counterfc from './6deccomponents/index'
 import Calculator from './calculator/index'
 import FormComp from './form7dec/index'
+import EvenOddChecker from './evenodd/index'
 function App() {
   return (
     <div className="App">
@@ -38,6 +39,7 @@ function App() {
       <FuncLifeCycle/>
       <Counterfc/>
       <Calculator/>
+      <EvenOddChecker/>
       
       
 

@@ -53,6 +53,7 @@ function Calculator() {
         <button class="equal" onClick={() => handleButtonClick("=")}>=</button>
       </div>
     </div>
+    <hr />
     </>
   );
 }
