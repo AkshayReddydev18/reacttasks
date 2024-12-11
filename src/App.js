@@ -8,6 +8,8 @@ import Formsubmission from "./formsubmission"
 import Productcards from "./productcards/"
 import FuncLifeCycle from './uicomponent/lifecycle/index'
 import Counterfc from './6deccomponents/index'
+import Calculator from './calculator/index'
+import FormComp from './form7dec/index'
 function App() {
   return (
     <div className="App">
@@ -25,6 +27,8 @@ function App() {
           Learn React
         </a>
       </header> */}
+      <FormComp/>
+      <Calculator/>
       
       <Cards/>
       <Productcards/>
