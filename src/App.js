@@ -11,7 +11,7 @@ import Counterfc from './6deccomponents/index'
 import Calculator from './calculator/index'
 import FormComp from './form7dec/index'
 import EvenOddChecker from './evenodd/index'
-import Accordion from './4/cards4dec/index'
+import Accordion from './dec4cards/index'
 function App() {
   return (
     <div className="App">
