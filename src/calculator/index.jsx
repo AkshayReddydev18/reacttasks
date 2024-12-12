@@ -7,7 +7,8 @@ function Calculator() {
   const handleButtonClick = (value) => {
     if (value === "C") {
       setDisplayValue("0");
-    } else if (value === "D") {
+    }
+    else if (value === "D") {
       setDisplayValue(
         displayValue.length > 1 ? displayValue.slice(0, -1) : "0"
       );
@@ -18,7 +19,8 @@ function Calculator() {
       } catch (error) {
         setDisplayValue("Error");
       }
-    } else {
+    } 
+    else {
       setDisplayValue(displayValue === "0" ? value : displayValue + value);
     }
   };

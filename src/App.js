@@ -30,8 +30,6 @@ function App() {
         </a>
       </header> */}
       <FormComp/>
-      
-      
       <Cards/>
       <Productcards/>
       <Main/>
@@ -42,10 +40,6 @@ function App() {
       <Calculator/>
       <EvenOddChecker/>
       <Accordion/>
-      
-      
-
-
     </div>
   );
 }
