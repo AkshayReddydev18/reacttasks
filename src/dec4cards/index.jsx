@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const Accordion = () => {
+const Accordionn = () => {
   const [products, setProducts] = useState([]);
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [inputId, setInputId] = useState('');
@@ -70,4 +70,4 @@ const Accordion = () => {
   );
 };
 
-export default Accordion;
+export default Accordionn;
