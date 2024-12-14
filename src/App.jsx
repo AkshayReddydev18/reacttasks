@@ -13,7 +13,7 @@ import FormComp from "./form7dec/index";
 import EvenOddChecker from "./evenodd/index";
 import Accordionn from "./dec4cards/index";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
+import Movielist from './movies/movie_list'
 function App() {
   return (
     <div className="App">
@@ -25,7 +25,7 @@ function App() {
             backgroundColor: "",
             textDecoration:"none",
             height: "50px",
-            fontSize: "30px",
+            fontSize: "20px",
           }}
         >
           <Link to="/task1">TASK1</Link>
@@ -37,11 +37,12 @@ function App() {
           <Link to="task7">TASK7</Link>
           <Link to="task8">TASK8</Link>
           <Link to="task9">TASK9</Link>
-          <Link to="task10">TASK10</Link>
-          <Link to="task11">TASK11</Link>
+          <Link to="EvenOddChecker">EvenOddChecker</Link>
+          <Link to="Accordionn">Accordionn</Link>
+          <Link to="task12">Movielist</Link>
         </nav>
-        <div style={{ display: "flex", justifyContent: "center" }}>
-          <Routes>
+        <div >
+          <Routes >
             <Route path="/task1" element={<FormComp />} />
             <Route path="/task2" element={<Cards />} />
             <Route path="/task3" element={<Productcards />} />
@@ -51,8 +52,10 @@ function App() {
             <Route path="/task7" element={<FuncLifeCycle />} />
             <Route path="/task8" element={<Counterfc />} />
             <Route path="/task9" element={<Calculator />} />
-            <Route path="/task10" element={<EvenOddChecker />} />
-            <Route path="/task11" element={<Accordionn />} />
+            <Route path="/EvenOddChecker" element={<EvenOddChecker />} />
+            <Route path="/Accordionn" element={<Accordionn />} />
+            <Route path="/task12" element={<Movielist />} />
+            
           </Routes>
         </div>
       </Router>
