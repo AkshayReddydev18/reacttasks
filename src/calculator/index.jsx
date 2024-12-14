@@ -15,9 +15,9 @@ function Calculator() {
     } // Delete last character
     else if (value === "=") {
       try {
-        // setDisplayValue(eval(displayValue).toString());
-        const result = math.evaluate(displayValue);
-        setDisplayValue(result.toString());
+        setDisplayValue(eval(displayValue).toString());
+        // const result = math.evaluate(displayValue);
+        // setDisplayValue(result.toString());
       } catch (error) {
         setDisplayValue("Error");
       }
